@@ -1,13 +1,9 @@
-class Main{
-    main():void{
+class Main {
+    main() {
         console.log("TP Ej2 R.Oliva - IoT DAW Hola mundo (ii)");
     }
 }
-
 window.onload = () => {
-    let m:Main = new Main();
+    let m = new Main();
     m.main();
-}
-
- 
-
+};
