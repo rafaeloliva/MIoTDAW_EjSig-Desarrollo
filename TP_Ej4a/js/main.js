@@ -9,15 +9,15 @@ class Main {
         let b = this.myf.getElementById("boton");
         console.log(b);
         b.textContent = "Haga click!";
-        let usuarios;
-        usuarios = new Array();
+        let usuarios = [];
+        //usuarios = new Array<User>();
         usuarios.push(new User(1, "jperez@perez.com", "Juanito"));
         usuarios.push(new User(2, "hpepe@perez.com", "Horacito"));
         usuarios.push(new User(3, "csosa@perez.com", "Carlitos"));
         // remplazamos salida por consola
         this.mostrarUsuarios(usuarios);
     }
-    mostrarUsuarios(users) {
+    mostrarUsuarios(usuarios) {
         /*
         let items:string="";
         for(let i in users){
@@ -25,7 +25,8 @@ class Main {
           items+="<li>"+users[i].name+" "+users[i].email+"</li>";
         }
         */
-        let strTemplate = `${users.map((item) => `<li>${item.name} ${item.email}</li>`).join('')}`;
+        let strTemplate = `${usuarios.map((item) => `<li>${item.name} ${item.email}</li>`).join('')}`;
+        // estaba faltando este elemento en index.html - daba error de ejecución
         let ul = this.myf.getElementById("listaUsuarios");
         ul.innerHTML = strTemplate;
     }

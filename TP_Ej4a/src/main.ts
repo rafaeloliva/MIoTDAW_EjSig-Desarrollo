@@ -16,8 +16,8 @@ class Main{
   
         b.textContent = "Haga click!";
 
-        let usuarios:Array<User>;
-        usuarios = new Array<User>();
+        let usuarios:Array<User> = [];
+        //usuarios = new Array<User>();
         usuarios.push(new User(1,"jperez@perez.com","Juanito"));
         usuarios.push(new User(2,"hpepe@perez.com","Horacito"));
         usuarios.push(new User(3,"csosa@perez.com","Carlitos"));
@@ -26,7 +26,7 @@ class Main{
         this.mostrarUsuarios(usuarios);
     }
 
-    mostrarUsuarios(users:Array<User>):void {
+    mostrarUsuarios(usuarios:Array<User>):void {
         /*
         let items:string="";
         for(let i in users){
@@ -36,9 +36,9 @@ class Main{
         */
         
         let strTemplate:string=`${
-            users.map((item) =>`<li>${item.name} ${item.email}</li>`).join('')
+            usuarios.map((item) =>`<li>${item.name} ${item.email}</li>`).join('')
           }`;
-
+        // estaba faltando este elemento en index.html - daba error de ejecución
         let ul:HTMLElement = this.myf.getElementById("listaUsuarios");
         ul.innerHTML = strTemplate;
     }
