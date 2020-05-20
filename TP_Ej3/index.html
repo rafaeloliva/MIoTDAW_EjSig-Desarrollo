@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>TPs DAW Ejs2-3-4 RO</title>
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+<!--         <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Navbar Link</a></li>
+              </ul>
+        
+              <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Navbar Link</a></li>
+              </ul>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+          </nav> -->
+          <nav>
+            <div class="nav-wrapper blue">
+              <a href="#" class="brand-logo right">Smart Home</a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="sass.html">Dispositivos</a></li>
+                <li><a href="badges.html">Configuracion</a></li>
+                <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
+              </ul>
+            </div>
+          </nav>
+          
+          <!-- 10.5.20 Aqui agregamos el container, restringe a 70% del ancho -->
+          <div class="container">
+            <!-- Page Content goes here -->
+            <h4 class="blue-text"> Dispositivos</h4>
+            <!-- Vamos a Collections, la última es Avatar - tomamos esa -->
+            <ul class="collection">
+                <!-- Primera Lampara, imagen icono guardamos en /imgs -->
+                <li class="collection-item avatar">
+                  <img src="imgs/lightbulb.png" alt="" class="circle">
+                  <span class="title">Lampara 1</span>
+                  <p>En Living 
+                  </p>
+                  <a href="#!" class="secondary-content">
+                      <!-- <i class="material-icons">grade</i></a> -->
+                      <!-- Reemplazar icono por switch -->
+                      <div class="switch">
+                        <label>
+                          Off
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                          On
+                        </label>
+                      </div>
+                    </a>
+                </li>
+                <!-- Segunda Lampara, Luz cocina -->                
+                <li class="collection-item avatar">
+                    <img src="imgs/lightbulb.png" alt="" class="circle">
+                    <span class="title">Lampara 2</span>
+                    <p>En Cocina 
+                    </p>
+                    <a href="#!" class="secondary-content">
+                        <!-- <i class="material-icons">grade</i></a> -->
+                        <!-- Reemplazar icono por switch -->
+                        <div class="switch">
+                          <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                          </label>
+                        </div>
+                      </a>
+                  </li>
+                <!-- Tercera Lampara, Luz habitacion 1 -->                
+                <li class="collection-item avatar">
+                    <img src="imgs/lightbulb.png" alt="" class="circle">
+                    <span class="title">Lampara 3</span>
+                    <p>En Habitacion 1 
+                    </p>
+                    <a href="#!" class="secondary-content">
+                        <!-- <i class="material-icons">grade</i></a> -->
+                        <!-- Reemplazar icono por switch -->
+                        <div class="switch">
+                          <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                          </label>
+                        </div>
+                      </a>
+                  </li>
+                <!-- Cuarta Lampara, Luz Taller -->                
+                <li class="collection-item avatar">
+                    <img src="imgs/lightbulb.png" alt="" class="circle">
+                    <span class="title">Lampara 4</span>
+                    <p>En Taller 
+                    </p>
+                    <a href="#!" class="secondary-content">
+                        <!-- <i class="material-icons">grade</i></a> -->
+                        <!-- Reemplazar icono por switch -->
+                        <div class="switch">
+                          <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                          </label>
+                        </div>
+                      </a>
+                  </li>
+                <!-- Persiana -->                     
+                  <li class="collection-item avatar">
+                    <img src="imgs/window.png" alt="" class="circle">
+                    <span class="title">Persiana Habitacion</span>
+                    <p>Frente a la cama
+                    </p>
+                    <a href="#!" class="secondary-content">
+                        <!-- <i class="material-icons">grade</i></a> -->
+                        <!-- Reemplazar icono por switch -->
+                        <div class="switch">
+                          <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                          </label>
+                        </div>
+                      </a>
+                  </li>
+                <!-- Quinta Lampara, Luz Baño -->                  
+                  <li class="collection-item avatar">
+                    <img src="imgs/lightbulb.png" alt="" class="circle">
+                    <span class="title">Lampara 5</span>
+                    <p>Luz baño
+                    </p>
+                    <a href="#!" class="secondary-content">
+                        <!-- <i class="material-icons">grade</i></a> -->
+                        <!-- Reemplazar icono por switch -->
+                        <div class="switch">
+                          <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                          </label>
+                        </div>
+                      </a>
+                  </li>                  
+              </ul>
+
+          </div>
+
+          <footer class="page-footer blue">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">FIUBA</h5>
+                  <p class="grey-text text-lighten-4">MIoT Desarrolo de Aplicaciones Web - R.Oliva.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">DAW I</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2020 
+              <a class="grey-text text-lighten-4 right" href="#!">Otros Links</a>
+              </div>
+            </div>
+          </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!--Se agregan archivos compilados por Typescript y alojados en /js-->
+      <script type="text/javascript" src="js/main.js"></script>
+    </body>
+  </html>
