@@ -7,4 +7,5 @@ b) Resumen Ejecicios 5-12 en Typescript desarrollados en clase
 
 c) Resumen Ejercicios NodeJs desarrollados en clase
 
-d) Desarrollo del TP Final DAW
+d) Desarrollo del TP Final DAW - 20.06.2020
+ 
